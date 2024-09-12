@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Modal Example</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional: Custom styles for the modal */
+    .modal-body img {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button to trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blogModal">
+    Read More
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="blogModalLabel">Blog Post Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent varius, erat vitae gravida fermentum, nulla magna auctor eros, ut vehicula libero nulla non ligula.</p>
+          <img src="your-image.jpg" class="img-fluid" alt="Blog Image">
+          <p>Curabitur ac ante vel risus interdum dapibus. Donec sit amet libero lorem. Integer at dui ut augue laoreet cursus non sit amet metus.</p>
+          <img src="another-image.jpg" class="img-fluid" alt="Another Blog Image">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
